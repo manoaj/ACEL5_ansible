@@ -1,6 +1,6 @@
 ---
 - name: Create VLANs from CLI
-  hosts: leaf1-DC1
+  hosts: leaf1_DC1
   gather_facts: no
   tasks:
   - name: Run VLAN command
