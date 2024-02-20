@@ -1,5 +1,5 @@
 ---
--leaf1-DC1:
+leaf1-DC1:
   interfaces:
     loopback0: 
       ipv4: 192.168.101.11
