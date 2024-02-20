@@ -1,0 +1,18 @@
+---
+- name: Remove multiple VLANs using loop
+  hosts: leafs_DC1, leafs_DC2
+  gather_facts: no
+  tasks:
+  - name: Delete VLANs
+    eos_vlans:
+      config:
+      - vlan_id: "{{ item }}"
+        state: active
+      state: deleted
+    loop:
+      - 4000
+      - 4001
+      - 4002
+      - 4003
+      - 4004
+      - 4005

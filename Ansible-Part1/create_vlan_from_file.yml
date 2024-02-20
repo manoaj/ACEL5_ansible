@@ -1,0 +1,9 @@
+---
+- name: Create VLANs from a file
+  hosts: leaf1-DC1
+  gather_facts: no
+  tasks:
+  - name: Get VLAN command for a file
+    eos_config:
+      src: vlans.cfg
+      

@@ -1,0 +1,11 @@
+---
+- name: Remove VLANs
+  hosts: leaf1-DC1
+  gather_facts: no
+  tasks:
+  - name: Delete VLANs
+    eos_vlans:
+      config:
+      - vlan_id: 4000
+        state: active
+      state: deleted
