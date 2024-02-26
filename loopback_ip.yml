@@ -1,0 +1,103 @@
+---
+DC1:
+    spine1:
+        loopback0: 192.168.101.101
+    spine2:
+        loopback0: 192.168.101.102
+    spine3:
+        loopback0: 192.168.101.103
+    leaf1:---
+DC1:
+    spine1:
+        loopback0: 192.168.101.101
+    spine2:
+        loopback0: 192.168.101.102
+    spine3:
+        loopback0: 192.168.101.103
+    leaf1:
+        loopback0: 192.168.101.11
+        loopback1: 192.168.102.11
+    leaf2:
+        loopback0: 192.168.101.12
+        loopback1: 192.168.102.11
+    leaf3:
+        loopback0: 192.168.101.13
+        loopback1: 192.168.102.13
+    leaf4:
+        loopback0: 192.168.101.14
+        loopback1: 192.168.102.13
+    borderleaf1:
+        loopback0: 192.168.101.21
+        loopback1: 192.168.102.21
+    borderleaf2:
+        loopback0: 192.168.101.22
+        loopback1: 192.168.102.21
+
+DC2:
+    spine1:
+        loopback0: 192.168.201.101
+    spine2:
+        loopback0: 192.168.201.102
+    spine3:
+        loopback0: 192.168.201.103
+    leaf1:
+        loopback0: 192.168.201.11
+        loopback1: 192.168.202.11
+    leaf2:
+        loopback0: 192.168.201.12
+        loopback1: 192.168.202.11
+    leaf3:
+        loopback0: 192.168.201.13
+        loopback1: 192.168.202.13
+    leaf4:
+        loopback0: 192.168.201.14
+        loopback1: 192.168.202.13
+    borderleaf1:
+        loopback0: 192.168.201.21
+        loopback1: 192.168.202.21
+    borderleaf2:
+       loopback0: 192.168.201.22
+       loopback1: 192.168.202.21
+        loopback0: 192.168.101.11
+        loopback1: 192.168.102.11
+    leaf2:
+        loopback0: 192.168.101.12
+        loopback1: 192.168.102.11
+    leaf3:
+        loopback0: 192.168.101.13
+        loopback1: 192.168.102.13
+    leaf4:
+        loopback0: 192.168.101.14
+        loopback1: 192.168.102.13
+    borderleaf1:
+        loopback: 192.168.101.21
+        loopback1: 192.168.102.21
+    borderleaf2:
+        loopback: 192.168.101.22
+        loopback1: 192.168.102.21
+
+DC2:
+    spine1:
+        loopback0: 192.168.201.101
+    spine2:
+        loopback0: 192.168.201.102
+    spine3:
+        loopback0: 192.168.201.103
+    leaf1:
+        loopback0: 192.168.201.11
+        loopback1: 192.168.202.11
+    leaf2:
+        loopback0: 192.168.201.12
+        loopback1: 192.168.202.11
+    leaf3:
+        loopback0: 192.168.201.13
+        loopback1: 192.168.202.13
+    leaf4:
+        loopback0: 192.168.201.14
+        loopback1: 192.168.202.13
+    borderleaf1:
+        loopback0: 192.168.201.21
+        loopback1: 192.168.202.21
+    borderleaf2:
+       loopback0: 192.168.201.22
+       loopback1: 192.168.202.21
