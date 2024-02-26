@@ -1,0 +1,10 @@
+---
+- name: Create VLANs from Jinja Template
+  hosts: leafs_DC1, leafs_DC2
+  gather_facts: false
+  tasks:
+  - name: Create cfg from Template
+    template:
+      src: "{{ lookup('env','PWD') }}/templates/vlans.j2"
+      dest: "{{ lookup('env','PWD') }}/configs/{{ inventory_hostname }}_vlans.cfg"
+      mode: 0644

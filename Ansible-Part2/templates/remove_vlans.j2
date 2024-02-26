@@ -1,0 +1,5 @@
+{# This delete the VLAN database entries #}
+{% for num in range(4004,4008) %}
+no vlan {{ num }}
+no interface vlan{{num}}
+{% endfor %}

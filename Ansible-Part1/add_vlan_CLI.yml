@@ -1,0 +1,10 @@
+---
+- name: Create VLANs from CLI
+  hosts: leaf1_DC1
+  gather_facts: no
+  tasks:
+  - name: Run VLAN command
+    eos_config:
+      lines:
+        - vlan 4000
+        -   name Testing_add_vlan_CLI.yml

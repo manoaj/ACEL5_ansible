@@ -1,0 +1,9 @@
+---
+- name: Save Config to Startup-config
+  hosts: all
+  gather_facts: no
+  tasks:
+  - name: Run copy command
+    eos_command:
+      commands:
+        - copy run start

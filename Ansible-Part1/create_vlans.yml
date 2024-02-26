@@ -1,0 +1,11 @@
+---
+- name: Create VLANs
+  hosts: leaf1_DC1
+  gather_facts: no
+  tasks:
+  - name: Add VLANs
+    eos_vlans:
+      config:
+      - vlan_id: 4000
+        state: active
+      state: merged
